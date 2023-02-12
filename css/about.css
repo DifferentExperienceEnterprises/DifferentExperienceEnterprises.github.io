@@ -1,0 +1,102 @@
+.default {
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
+    --content-background-color: #fff;
+    --card-border-color       : #fff;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color        : #141414;
+        --text-color              : #fff;
+        --inversed-text-color     : #000;
+        --content-background-color: #000;
+        --card-border-color       : #444;
+    }
+}
+
+.lightmode {
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
+    --content-background-color: #fff;
+    --card-border-color       : #fff;
+}
+
+.darkmode {
+    --background-color        : #141414;
+    --text-color              : #fff;
+    --inversed-text-color     : #000;
+    --content-background-color: #000;
+    --card-border-color       : #444;
+}
+
+.content {
+    padding-left : var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+}
+
+.content-header {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.card {
+    border-width    : 1px;
+    border-color    : var(--card-border-color);
+    background-color: var(--content-background-color);
+    border-radius: 1rem;
+}
+
+h5 {
+    margin-bottom: 0;
+}
+
+.row {
+    margin-left : 0;
+    margin-right: 0;
+}
+
+.business-card {
+    background-color: var(--content-background-color);
+    color           : var(--text-color);
+    border-width    : 1px;
+    border-color    : red;
+    margin          : .375rem;
+    padding-top     : .75rem;
+    padding-bottom  : .75rem;
+    border-radius   : 0.5rem;
+}
+
+.business-card-content {
+    display        : flex;
+    justify-content: flex-start;
+    flex-wrap      : wrap;
+    gap            : 1rem;
+}
+
+.card-img {
+    width: 25%;
+}
+
+.factory {
+    height             : 25rem;
+    background-image   : url('/assets/home/machines.jpg');
+    background-position: center;
+    background-size    : cover;
+    border-radius: 0.7rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .factory {
+        background-image: url('/assets/home/machines-narrow.jpg');
+    }
+}

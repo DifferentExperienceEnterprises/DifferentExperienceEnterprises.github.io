@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diffex · Contact</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- EmailJS -->
+  <script src="/js/sendEmail.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_XTOkW2AvzRNDN4W6Xuj6H");
+    })();
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <!-- JavaScript -->
+  <script defer src="/js/theme.js"></script>
+  <script defer src="/js/navbar.js"></script>
+  <script defer src="/js/contact.js"></script>
+  <script defer src="/js/bottombar.js"></script>
+</head>
+
+<body class="default">
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Body -->
+  <div class="content">
+    <h1 style="text-align: center; font-size: 3rem; margin-bottom: 2rem;">Get in touch with us</h1>
+    <div class="slate">
+      <div class="slate-left">
+        
+        <div class="card">
+          <div class="card-body card-content">
+            <div class="card-text card-title">Open Hours</div>
+            <div class="open-hours">MONDAY&emsp;9:30 am - 6:30 pm<br>TUESDAY&emsp;9:30 am - 6:30 pm<br>WEDNESDAY&emsp;9:30 am - 6:30
+              pm<br>THURSDAY&emsp;9:30 am - 6:30 pm<br>FRIDAY&emsp;9:30 am - 6:30 pm<br>SATURDAY&emsp;9:30 am - 2:30 pm</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body card-content-google">
+            <div class="card-text"><span class="card-title">Office</span> &emsp; B1, Royale Apartment, 920, Madurdaha, Kolkata</div>
+            <div style="display: block;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.089033373171!2d88.40279411495825!3d22.50084248521964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0273e3bcf4206d%3A0x527c434e7b819289!2sDIFFEX!5e0!3m2!1sen!2sin!4v1632119747564!5m2!1sen!2sin" width="100%" height="500" class="gmap" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+          </div>
+        </div>
+      </div>
+      <div class="slate-right">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">Send a message</div>
+            <div class="mb-4">
+              <label for="name">Name <span class="req">*</span></label>
+              <input type="name" id="name" aria-label="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-4">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" aria-label="email" class="form-control" placeholder="example@email.com" required>
+            </div>
+            <div class="mb-4">
+              <label for="phone">Phone</label>
+              <input type="phone" id="phone" aria-label="phone" class="form-control" placeholder="+91 98765 43210">
+            </div>
+            <div class="mb-4">
+              <label for="subject">Subject <span class="req">*</span></label>
+              <input type="text" id="subject" aria-label="subject" class="form-control" placeholder="Write a subject" required>
+            </div>
+            <div class="mb-4">
+              <label for="message">Message <span class="req">*</span></label>
+              <textarea type="text" id="message" aria-label="message" class="form-control" placeholder="Write your message" rows="4" draggable="false" style="resize: none;" required></textarea>
+            </div>
+            <div class="mb-1">
+              <div class="g-recaptcha" data-sitekey="6Lf40X8cAAAAANV_BSDnpEin3VEOukyYoZh5I5Nj" id="reCAPTCHA" role="checkbox" aria-required="true"></div>
+              <span style="color: transparent; font-size: small;" id="reCAPTCHA-error">reCAPTCHA required</span>
+            </div>
+            <div class="mb-2">
+              <button class="btn btn-primary" type="submit" id="submit" onclick="sendEmail()">
+                Submit&emsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                  <path fill-rule="evenodd"
+                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottombar -->
+  <div id="bottombar"></div>
+
+  <!-- Theme Modal -->
+  <div id="themeModalHTML"></div>
+
+</body>
+
+</html>

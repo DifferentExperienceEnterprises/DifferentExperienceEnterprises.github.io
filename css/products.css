@@ -1,0 +1,144 @@
+.default,
+.lightmode {
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
+    --content-background-color: #fff;
+    --form-color              : #fff;
+    --border                  : 2px solid white;
+    --card-border-color       : #ddd;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color        : #141414;
+        --text-color              : #fff;
+        --inversed-text-color     : #000;
+        --content-background-color: #000;
+        --form-color              : #ccc;
+        --border                  : 2px solid white;
+        --card-border-color       : #444;
+    }
+}
+
+.darkmode {
+    --background-color        : #141414;
+    --text-color              : #fff;
+    --inversed-text-color     : #000;
+    --content-background-color: #000;
+    --form-color              : #ccc;
+    --border                  : 2px solid white;
+    --card-border-color       : #444;
+}
+
+/* body */
+
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+hr {
+    margin-top   : 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.row {
+    width : 100%;
+    margin: 0;
+}
+
+.brand-img {
+    text-align: center;
+}
+
+.dropdown-btn {
+    text-align: center;
+}
+
+.col-row {
+    display    : flex;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--content-background-color);
+    border          : var(--border);
+    border-color    : var(--card-border-color);
+    transition      : linear 200ms;
+    border-radius   : 1rem;
+}
+
+.card:hover {
+    border    : 2px solid #0d6efd;
+    transition: linear 200ms;
+}
+
+.card-body {
+    padding-top: 0.5rem;
+    text-align : start;
+}
+
+.tdk-subtext {
+    color: var(--text-color);
+}
+
+.a {
+    color: var(--text-color);
+    max-width: 13.75rem;
+}
+
+.h4 {
+    color: var(--text-color);
+}
+
+.list-group-item {
+    background: var(--card-border-color);
+    color     : var(--text-color);
+    transition: linear 200ms;
+}
+
+#list-group-item {
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius : 0.8rem;
+}
+
+.card:hover .list-group-item {
+    background-color: #0d6efd;
+    color           : white;
+    transition      : linear 200ms;
+}
+
+.supplier {
+    width : 30%;
+    margin: 2rem 0;
+}
+
+.row {
+    justify-content: flex-start;
+}
+
+.product {
+    display        : flex;
+    justify-content: flex-start;
+    flex-wrap      : nowrap;
+    align-items    : flex-start;
+}
+
+.product-pic {
+    border-top-left-radius: 0.875rem;
+}
+
+.show-products-btn {
+    border-radius: 0.75rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .supplier {
+        width: 100%;
+    }
+
+    .brand-img {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,72 @@
+.default {
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
+    --content-background-color: #fff;
+    --form-color              : #fff;
+    --card-border-color       : #fff;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color        : #141414;
+        --text-color              : #fff;
+        --inversed-text-color     : #000;
+        --content-background-color: #000;
+        --form-color              : #ccc;
+        --card-filter             : invert(100%);
+        --card-border-color       : #444;
+    }
+}
+
+.lightmode {
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
+    --content-background-color: #fff;
+    --form-color              : #fff;
+    --card-border-color       : #fff;
+}
+
+.darkmode {
+    --background-color        : #141414;
+    --text-color              : #fff;
+    --inversed-text-color     : #000;
+    --content-background-color: #000;
+    --form-color              : #ccc;
+    --card-filter             : invert(100%);
+    --card-border-color       : #444;
+}
+
+.content {
+    padding-left : var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.showcase {
+    text-align     : center;
+    justify-content: center;
+    align-items    : center;
+}
+
+.card {
+    background-color: var(--content-background-color);
+    color           : var(--text-color);
+    border-width    : 1px;
+    border-color    : var(--card-border-color);
+    margin-bottom   : var(--bs-gutter-x, .75rem);
+    border-radius: 1rem;
+}
+
+.row {
+    filter        : var(--card-filter);
+    -webkit-filter: var(--card-filter);
+}
+
+.client-img {
+    margin: 1.5rem 0;
+}
