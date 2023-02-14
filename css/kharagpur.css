@@ -36,6 +36,18 @@
     cursor: default;
 }
 
+.kgp-logo-small {
+    display: none;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: default;
+}
+
+.kgp-logo-small:hover {
+    cursor: default;
+}
+
 .content {
     padding-left : var(--bs-gutter-x, .75rem);
     padding-right: var(--bs-gutter-x, .75rem);
@@ -153,5 +165,9 @@ h3 {
 @media only screen and (max-width: 420px) {
     .kgp-logo {
         display: none;
+    }
+
+    .kgp-logo-small {
+        display: inline-block;
     }
 }

@@ -4,7 +4,7 @@ var navbarElement3 = '</ul></ul></div></div></div></nav>';
 
 var titleNavElement = '<a class=\"navbar-brand btn-danger\" id=\"titleNav\" href=\"/\">DIFFEX</a><span class=\"kol-logo\">KOLKATA</span>';
 
-var homeNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"homeNav\" href=\"/\">Home</a></li>';
+var homeNavElement = '<li class=\"nav-item\"><a class=\"nav-link nav-link-home\" id=\"homeNav\" href=\"/\">Home</a></li>';
 var productsNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"productsNav\" href=\"/products\">Products</a></li>';
 var clientsNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"clientsNav\" href=\"/clients\">Clients</a></li>';
 var aboutNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"aboutNav\" href=\"/about\">About</a></li>';
